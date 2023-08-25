@@ -1,0 +1,101 @@
+@use '../../utils/mixins.scss';
+.room-view-modal-overlay{
+   display: flex;
+   position: absolute;
+   z-index:300;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   height: inherit;
+   background-color: rgba(0,0,0,0.4);
+   justify-content: center;
+   align-items: center;
+}
+
+.room-view-modal{
+   position: relative;
+   z-index: 200;
+   width: max(500px,40vw);
+   // overflow-y: scroll;
+   background-color: white;
+   box-shadow: 0 0 2px 1px rgba(0,0,0,0.4);
+   border-radius: 2px;
+}
+
+.room-view-modal-header{
+   @include mixins.header-styles();
+   transition: background-color 0.2s ease-in-out;
+}
+.room-view-modal-header:hover{
+   background-color: rgba(218, 205, 205, 0.653);
+}
+.modal-header-middle{
+   min-width: 300px;
+   flex: 1;
+   text-align: center;
+   margin-right: 75px;
+}
+
+.close-btn{
+   position: absolute;
+   top:0;
+   right:0;
+}
+
+.trailer-container{
+   position: relative;
+}
+.stats-container{
+   display: flex;
+   justify-content: space-between;
+   padding:10px 2px;
+   box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+   transition: background-color 0.2s ease-in-out
+}
+.stats-container:hover{
+   background-color: rgba(218, 205, 205, 0.653);
+}
+.address-container{
+   text-align: center;
+   text-decoration: underline;
+   padding:10px 2px;
+   box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+   transition: background-color 0.2s ease-in-out;
+   height: auto;
+}
+.address-container:hover{
+   background-color: rgba(218, 205, 205, 0.653);
+}
+.room-desc-container{
+   display: flex;
+}
+.room-img{
+   float:left;
+   width: 300px;
+}
+.modal-view-room-desc{
+   font-size: 19px;
+   line-height: 25px;
+   font-weight: bold;
+   padding: 5px;
+   transition: background-color 0.2s ease-in-out;
+}
+.modal-view-room-desc:hover{
+   background-color: rgba(218, 205, 205, 0.653);
+}
+.room-view-modal-owner-container{
+   display: flex;
+   justify-content: center;
+   text-decoration: underline;
+   padding: 10px 0;
+}
+.room-view-button-container{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 15px 0;
+   box-shadow: -1px 1px 5px rgba(0,0,0);
+}
+
+

@@ -1,0 +1,62 @@
+
+.grid-cell-btn{
+  background-color: transparent;
+  border: none;
+}
+.room-preview{
+   box-shadow: 8px 10px 10px 5px rgba(114, 176, 181, 0.119);
+   transition: border 0.02s linear,
+               padding 0.02s linear;
+   padding: 5px;
+ }
+ .room-preview:hover{
+   border: 2px solid rgba(84, 229, 255, 0.26);
+   padding: 3px;
+   cursor: pointer;
+ }
+ .thumbnail-row{
+    position: relative;
+    margin-bottom: 10px;
+  }
+ 
+  .thumbnail{
+    width: 100%;
+    aspect-ratio: 1.5;
+    border-radius: 10px;
+  }
+  
+  .room-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .name-and-price-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .room-name{
+    width: 70%;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .price{
+   font-weight: bold;
+  }
+  .room-desc{
+    line-height: 18px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .capacity-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 11px;
+    color: rgb(66, 51, 51);
+    font-weight: bold;
+  }
+ 
+  

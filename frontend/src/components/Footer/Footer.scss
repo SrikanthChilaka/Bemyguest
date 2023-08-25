@@ -1,0 +1,31 @@
+/* Footer section set as flex container for its contents */
+.footer-section{
+   position: relative;
+   z-index: 100;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 8px;
+   padding: 20px 15px;
+   background-color: rgba(56, 91, 122, 0.144); 
+   box-shadow: 0 0 8px 1px rgba(0,0,0,0.4);
+   min-width: 930px;
+}
+
+.footer-left{
+   min-width: 350px;
+}
+
+.footer-right{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   min-width: 100px;
+}
+.footer-socials{
+   width: 25px;
+   cursor: pointer;
+}
+

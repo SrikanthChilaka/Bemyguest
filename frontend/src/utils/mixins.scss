@@ -1,0 +1,25 @@
+@mixin header-styles(
+   $position: relative,
+   $font-size: 24px,
+   $text-shadow: 1px 1px 1px rgba(158, 91, 163, 0.4),
+   $color: rgba(87, 76, 76, 0.966),
+   $display: flex,
+   $justify-content: center,
+   $align-items: center,
+   $font-weight: 700,
+   $width: 100%,
+   $background-color: rgba(255, 255, 255, 0.934),
+   $box-shadow: 0 0 8px 1px rgba(0,0,0,0.4)
+   ){
+      position: relative;
+      font-size: $font-size;
+      color : $color;
+      display: $display;
+      justify-content: $justify-content;
+      align-items: $align-items;
+      background-color: $background-color;
+      font-weight: $font-weight;
+      width: $width;
+      box-shadow: $box-shadow;
+      text-shadow: $text-shadow;
+   }

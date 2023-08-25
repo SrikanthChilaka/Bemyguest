@@ -1,0 +1,19 @@
+#app {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    height: 100px;
+    width: 100px;
+    padding: 1em;
+  }
+.formLayout{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0.4;
+}
